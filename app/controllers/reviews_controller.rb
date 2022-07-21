@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :set_restaurant, only: %i[index show new create]
+  before_action :set_restaurant
 
   def index
     @reviews = @restaurant.reviews
@@ -7,6 +7,10 @@ class ReviewsController < ApplicationController
 
   def show
     @review = Review.find(params[:id])
+  end
+
+  def new
+    @review = Review.new
   end
 
   def create

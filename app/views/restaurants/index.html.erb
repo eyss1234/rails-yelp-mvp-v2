@@ -1,11 +1,8 @@
-<nav class="navbar bg-light">
-  <h1 style="font-size: 18px;">List of Restaurants</h1>
-  <%= link_to "Add new restaurant", new_restaurant_path, class: "btn btn-primary"%>
-</nav>
-<div class="container cards">
+<div>
   <ul>
     <% @restaurants.each do |restaurant| %>
       <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
     <% end %>
   </ul>
 </div>
+
