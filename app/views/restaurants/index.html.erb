@@ -1,7 +1,7 @@
-<div>
+<div class="mt-5">
   <ul>
     <% @restaurants.each do |restaurant| %>
-      <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+      <li style="list-style: none; padding-top: 10px;"><%= link_to restaurant.name, restaurant_path(restaurant), class: "restaurants-display" %></li>
     <% end %>
   </ul>
 </div>

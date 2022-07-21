@@ -14,8 +14,8 @@
 
   <body>
 
-    <nav class="navbar bg-light">
-      <h1 style="font-size: 18px;">List of Restaurants</h1>
+    <nav class="navbar bg-light px-3">
+      <h1 style="font-size: 18px"><%= link_to "Restaurants", restaurants_path, class: "navbar-title" %></h1>
       <%= link_to "Add new restaurant", new_restaurant_path, class: "btn btn-primary"%>
     </nav>
     <div class="container">
